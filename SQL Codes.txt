@@ -1,0 +1,27 @@
+Create Database Kisiler
+
+create table Personel(
+personel_id int primary key identity (1,1) not null,
+Ad_Soyad nvarchar(100),
+Email nvarchar(100),
+Telefon nvarchar(100),
+Adres nvarchar(200)
+)
+
+insert into Personel (Ad_Soyad,Email,Telefon,Adres) values ('Nazan Öncel', 'NazanOncel@gmail.com','05555555555','İstanbul sok. No:1')
+
+select * from Personel
+
+
+select * from Personel
+
+insert into Personel (Ad_Soyad,Email,Telefon,Adres) values ('Sezen Aksu','Aksusezen@gmail.com','05333333333','Gitmedur Mah. No:5')
+insert into Personel (Ad_Soyad,Email,Telefon,Adres) values ('Barış Manço','Mancobaris@gmail.com','05222222222','ArkadaşımEş Cad. No:12')
+insert into Personel (Ad_Soyad,Email,Telefon,Adres) values ('Hakan Altun','Altunhakan@hotmail.com','05111111111','TelefonBaşı Sok. No:2')
+insert into Personel (Ad_Soyad,Email,Telefon,Adres) values ('Yıldız Tilbe','Tilbeyıldız@gmail.com','05666666666','Delikanlım Mah. No:3')
+insert into Personel (Ad_Soyad,Email,Telefon,Adres) values ('Derya Uluğ','Ulugderya@hotmail.com','05777777777','Kanunlar Cad. No:11')
+insert into Personel (Ad_Soyad,Email,Telefon,Adres) values ('Emre Aydın','Aydınemre@gmail.com','05888888888','Benibiraz Mah. No:4')
+insert into Personel (Ad_Soyad,Email,Telefon,Adres) values ('Hayko Cepkin','Cepkinhayko@gmail.com','05010101010','Aşkkitabı sok. No:14')
+
+update Personel set Adres='Benivurup Mah. No:8' where personel_id=8
+
